@@ -19,7 +19,7 @@ Usage
 For the batched version, we expect input tensors `A` and `b` to be of shape `(B, N, N)` and `(B, N, 1)` respectively. If an optional initial guess `x0` is provided, it should be of shape `(B, N, 1)`. The output `x` will be of shape `(B, N, 1)`.
 
 ```python
-from batch_optim import CG, GD
+from batch_optim import CG_Batch
 
 # Create a random positive definite matrix A
 A = torch.randn(1, 20, 10).double()

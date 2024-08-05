@@ -4,9 +4,15 @@ Conjugate Gradient (CG) and Gradient Descent (GD) in PyTorch
 This repository contains the implementation of the Conjugate Gradient (CG) and Gradient Descent (GD) optimization algorithms in PyTorch. 
 In particular, both CG and GD are provided as batched and non-batched versions and can be run on either CUDA or CPU. 
 
-In the batched version, we attempt to solve problems of the form: $$\min_{x_i} \Vert A_ix_i - b_i \Vert_2^2$$ for all $i$ simultaneously.
+In the batched version, we attempt to solve problems of the form: 
 
-In the non-batched version, we solve the problem: $$\min_x \Vert A_x - b \Vert_2^2.$$
+$$\min_{x_i} \Vert A_ix_i - b_i \Vert_2^2$$
+
+for all $i$ simultaneously.
+
+In the non-batched version, we solve the problem: 
+
+$$\min_x \Vert A_x - b \Vert_2^2.$$
 
 Usage
 -----
